@@ -29,7 +29,7 @@ class Seq
     end
     packed_array.push([tmp.last, tmp.length]) unless tmp.empty?
 
-    packed_array.map {|e| "#{e[1]}#{e[0]}"}.join
+    packed_array.map { |e| "#{e[1]}#{e[0]}" }.join
   end
 
 end
