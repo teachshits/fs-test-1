@@ -35,7 +35,8 @@ class Seq
 end
 
 if __FILE__ == $0
+  steps = ARGV.first.to_i || 7
   s = Seq.new
   
-  (0..7).each { |step| puts s.at(step) }
+  (0..steps).each { |step| puts s.at(step) }
 end
